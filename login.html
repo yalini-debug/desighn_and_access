@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zero Trust Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h2>Context Aware Access Control</h2>
+
+<form method="POST">
+
+Username
+<input type="text" name="username"><br><br>
+
+Password
+<input type="password" name="password"><br><br>
+
+Device Status
+<select name="device">
+<option value="secure">Secure</option>
+<option value="unpatched">Unpatched</option>
+</select><br><br>
+
+Location
+<select name="location">
+<option value="office">Office</option>
+<option value="public_wifi">Public Wifi</option>
+<option value="foreign">Foreign Country</option>
+</select><br><br>
+
+Application Risk
+<select name="app_risk">
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+</select><br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+</body>
+</html>
